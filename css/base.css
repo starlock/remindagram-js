@@ -1,0 +1,25 @@
+body {
+  overflow: hidden;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.images div.image-container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+.images div.image-container .image {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}

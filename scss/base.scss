@@ -1,0 +1,30 @@
+@mixin box-size($size) {
+	box-sizing:$size;
+	-moz-box-sizing:$size; /* Firefox */
+	-webkit-box-sizing:$size; /* Safari */
+}
+
+body {
+	overflow: hidden;
+}
+
+.images {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	div.image-container {
+		position: relative;
+		width: 50%;
+		height: 50%;
+		display: inline-block;
+		@include box-size(border-box);
+
+		.image {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+		}
+	}
+}
+
